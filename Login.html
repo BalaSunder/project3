@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Login</title>
+</head>
+<body>
+        <div class="container">
+        <h1 class="label">We To Do</h1>
+        <form class="login_form" action="home.html" method="post" name="form" onsubmit="return verifyPassword()">
+        <div class="font">User Name</div>
+        <input id="username" autocomplete="off" type="text" style="width: 95%;" name="username">
+        <div id="email_error">Please fill up username</div>
+        <div class="font2">Password</div>
+        <input id="password" type="password" name="password" style="width: 95%;">
+        <div id="message"></div>
+        <input type="button" value="Login" style="width: 98%;margin-top:25px;"  onclick="javascript:validate()" />
+
+    </form>
+</div>
+<script src="valid.js"></script>
+</body>
+</html>
